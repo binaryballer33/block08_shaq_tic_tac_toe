@@ -1,5 +1,7 @@
 # Shaq's TicTacToe
 
+[Link To Play The Game](https://binaryballer33.github.io/block08_shaq_tic_tac_toe/)
+
 ## Description
 
 - Just a little browser, solo playable game
