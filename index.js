@@ -38,10 +38,15 @@ function modifyDomReturnTrue(winPosition1, winPosition2, winPosition3) {
     if (!winOrTie.innerHTML) winOrTie.innerHTML = `<h1>Player ${getOppositeMarker()} Won!!!</h1>`;
     if (!playAgain.innerHTML) playAgain.innerHTML = '<button class="playAgain">Play Again</button>'
     
+    // JSConfetti is created through the script in the index.html
+    const jsConfetti = new JSConfetti()
+    jsConfetti.addConfetti()
+    
     // highlight the winning combination with a bright noticable color
     winPosition1.classList.add('winningCombination')
     winPosition2.classList.add('winningCombination')
     winPosition3.classList.add('winningCombination')
+    document.body.classList.add("winningBackgroundGradient")
 
     currentPlayer.remove(); 
     turnSwitcher.removeEventListener('click', turnSwitcherEventListener)

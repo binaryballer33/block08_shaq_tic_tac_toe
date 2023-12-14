@@ -27,7 +27,7 @@ div h1 {
     font-size: 20px;
     margin: 20px;
     border: 4px solid darkslategray;
-    background-color: aliceblue;
+    background-image: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(15,223,200,1) 35%, rgba(0,212,255,1) 100%);
     color: darkslategray;
     font-weight: bold;
     display: flex;
@@ -36,13 +36,18 @@ div h1 {
 }
 
 .playAgain:hover {
+    background-image: none;
     background-color: darkslategray;
     color: aliceblue;
     cursor: pointer;
 }
 
 .winningCombination {
-    border: 4px solid darkgoldenrod !important;
+    border: 4px solid gold !important;
+}
+
+.winningBackgroundGradient {
+    background-image: linear-gradient(90deg, rgb(1 48 41 / 60%) 0%, rgba(15,223,200,1) 35%, rgba(0,212,255,1) 100%)
 }
 
 .row {
