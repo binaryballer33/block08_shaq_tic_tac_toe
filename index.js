@@ -95,6 +95,7 @@ function checkForTie() {
     }
 
     currentPlayer.remove()
+    if (!playAgain.innerHTML) playAgain.innerHTML = '<button class="playAgain">Play Again</button>'
     winOrTie.innerHTML = `<h1>There Was A Tie</h1>`
 }
 
